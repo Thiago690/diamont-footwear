@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login, Cadastro e Recuperação de Senha com Supabase</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Autenticação Supabase</h1>
+
+        <p id="message" class="hidden"></p>
+
+        <form id="authForm">
+            <input type="email" id="email" placeholder="E-mail" required>
+            <input type="password" id="password" placeholder="Senha" required>
+
+            <button type="submit" id="submitButton">Cadastrar</button>
+        </form>
+
+        <p class="toggle-links">
+            <a href="#" id="toggleMode">Fazer Login</a>
+            <span id="separator" class="hidden">|</span>
+            <a href="#" id="forgotPasswordLink">Esqueci a Senha</a>
+        </p>
+
+        <div id="loggedInArea" class="hidden">
+            <h2>Bem-vindo!</h2>
+            <p id="userEmail"></p>
+            <button id="logoutButton">Sair</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
