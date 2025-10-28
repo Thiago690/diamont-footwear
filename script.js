@@ -1,6 +1,6 @@
 // 1. Substitua pelos seus dados do Supabase!
-const SUPABASE_URL = '[SEU_URL_DO_PROJETO]';
-const SUPABASE_ANON_KEY = '[SUA_CHAVE_PUBLICA_ANON]';
+const SUPABASE_URL = https://tvpuleqsmtpqwkxmdzsd.supabase.co;
+const SUPABASE_ANON_KEY = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR2cHVsZXFzbXRwcXdreG1kenNkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTg2Mzc3MzYsImV4cCI6MjA3NDIxMzczNn0.FOQRXzykxjB7_89RUknTCj4G8K6bdQX1wypL7xwlPwg;
 
 // O "createClient" vem do CDN que incluímos no HTML
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
