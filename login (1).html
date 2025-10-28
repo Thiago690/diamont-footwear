@@ -1,108 +1,130 @@
-<!doctype html>
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-  <meta charset="utf-8" />
-  <title>Cadastro/Login - Supabase</title>
-  <link rel="stylesheet" href="login.css">
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unik Stil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="top-bar">
+        <div class="top-item">
+            <span class="icon">🔒</span>
+            <span class="top-text">COMPRA SEGURA</span>
+        </div>
+        <div class="top-item">
+            <span class="icon">🛻</span>
+            <span class="top-text">FRETE GRÁTIS</span>
+        </div>
+        <div class="top-item">
+            <span class="icon">💳</span>
+            <span class="top-text">PARCELE EM ATÉ 12X</span>
+        </div>
+    </header>
 
-  <!-- Menu fixo -->
-  <header>
-    <nav class="navbar">
-      <h1 class="logo">TCC em Sistemas</h1>
-      <ul class="nav-links">
-        <li><a href="#sobre">O que é TCC</a></li>
-        <li><a href="#importancia">Importância</a></li>
-        <li><a href="#etapas">Etapas</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#dicas">Dicas</a></li>
-        <li><a href="#futuro">Futuro</a></li>
-        <li><a href="#links">Links Úteis</a></li>
-        <li><a href="login.html">Login</a></li>
-      </ul>
+    <nav class="main-menu">
+        <div class="logo">UNIK <span>STIL</span></div>
+        <ul>
+            <li><a href="#">INÍCIO</a></li>
+            <li><a href="#">QUEM SOMOS</a></li>
+            <li><a href="#">MINHA CONTA</a></li>
+            <li><a href="#">PERGUNTAS FREQUENTES</a></li>
+            <li><a href="#">DICAS DE CUIDADO</a></li>
+            <li><a href="#">RASTREAMENTO</a></li>
+        </ul>
+        <div class="cart-icon">🛒</div>
     </nav>
-  </header>
 
-
-  <div class="container auth">
-    <div class="tabs">
-      <button class="tab active" data-tab="login-pane">Login</button>
-      <button class="tab" data-tab="register-pane">Cadastro</button>
-    </div>
-
-    <!-- PANE DE LOGIN -->
-    <div id="login-pane" class="pane active">
-      <form id="loginForm" class="form">
-        <div class="field">
-          <label for="loginUser">Usuário ou E-mail</label>
-          <input id="loginUser" required>
+    <main>
+        <div class="carousel-container">
+            <div class="carousel-slide fade">
+                <img src="banner1.png" alt="Slide 1">
+            </div>
+            <div class="carousel-slide fade">
+                <img src="https://via.placeholder.com/1500x500/FF0000/FFFFFF?text=Slide+2" alt="Slide 2">
+            </div>
+            <div class="carousel-slide fade">
+                <img src="https://via.placeholder.com/1500x500/00FF00/FFFFFF?text=Slide+3" alt="Slide 3">
+            </div>
+            <div class="carousel-slide fade">
+                <img src="https://via.placeholder.com/1500x500/FFFF00/000000?text=Slide+4" alt="Slide 4">
+            </div>
+            <div class="carousel-slide fade">
+                <img src="https://via.placeholder.com/1500x500/800080/FFFFFF?text=Slide+5" alt="Slide 5">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
         </div>
-        <div class="field">
-          <label for="loginPass">Senha</label>
-          <input id="loginPass" type="password" required>
+
+        <section class="product-section">
+            <h2 class="section-title">DESTAQUES</h2>
+            <div class="product-grid">
+                <a href="#" class="product-card">
+                    <img src="https://via.placeholder.com/300x400/CCCCCC/000000?text=Produto+1" alt="Produto 1">
+                    <div class="product-info">
+                        <h3>Nome do Produto 1</h3>
+                        <p class="product-price">R$ 99,90</p>
+                        <p class="product-sizes">Tamanhos: P, M, G</p>
+                        <p class="product-description">Breve descrição do produto.</p>
+                    </div>
+                </a>
+                <a href="#" class="product-card">
+                    <img src="https://via.placeholder.com/300x400/CCCCCC/000000?text=Produto+2" alt="Produto 2">
+                    <div class="product-info">
+                        <h3>Nome do Produto 2</h3>
+                        <p class="product-price">R$ 120,00</p>
+                        <p class="product-sizes">Tamanhos: M, G, GG</p>
+                        <p class="product-description">Breve descrição do produto.</p>
+                    </div>
+                </a>
+                <a href="#" class="product-card">
+                    <img src="https://via.placeholder.com/300x400/CCCCCC/000000?text=Produto+3" alt="Produto 3">
+                    <div class="product-info">
+                        <h3>Nome do Produto 3</h3>
+                        <p class="product-price">R$ 85,50</p>
+                        <p class="product-sizes">Tamanhos: P, M</p>
+                        <p class="product-description">Breve descrição do produto.</p>
+                    </div>
+                </a>
+                <a href="#" class="product-card">
+                    <img src="https://via.placeholder.com/300x400/CCCCCC/000000?text=Produto+4" alt="Produto 4">
+                    <div class="product-info">
+                        <h3>Nome do Produto 4</h3>
+                        <p class="product-price">R$ 150,00</p>
+                        <p class="product-sizes">Tamanhos: P, M, G, GG</p>
+                        <p class="product-description">Breve descrição do produto.</p>
+                    </div>
+                </a>
+                <a href="#" class="product-card">
+                    <img src="https://via.placeholder.com/300x400/CCCCCC/000000?text=Produto+5" alt="Produto 5">
+                    <div class="product-info">
+                        <h3>Nome do Produto 5</h3>
+                        <p class="product-price">R$ 90,00</p>
+                        <p class="product-sizes">Tamanhos: G, GG</p>
+                        <p class="product-description">Breve descrição do produto.</p>
+                    </div>
+                </a>
+                <a href="#" class="product-card">
+                    <img src="https://via.placeholder.com/300x400/CCCCCC/000000?text=Produto+6" alt="Produto 6">
+                    <div class="product-info">
+                        <h3>Nome do Produto 6</h3>
+                        <p class="product-price">R$ 110,00</p>
+                        <p class="product-sizes">Tamanhos: P, M, G</p>
+                        <p class="product-description">Breve descrição do produto.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>UNIK STILL</p>
+            <p>Feito pelos alunos Fabiano, Thiago e Matheus - Todos os direitos reservados - 2025</p>
         </div>
-        <button class="btn full" type="submit">Entrar</button>
-      </form>
+    </footer>
 
-      <div class="divider">ou</div>
-
-      <!-- BOTÃO LOGIN COM GOOGLE -->
-      <button id="googleLoginBtn" class="btn full google-btn">
-        <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" 
-             alt="Google logo" width="20" style="vertical-align:middle; margin-right:8px;">
-        Entrar com Google
-      </button>
-    </div>
-
-    <!-- PANE DE CADASTRO -->
-    <div id="register-pane" class="pane">
-      <form id="registerForm" class="form">
-        <div class="field">
-          <label for="regNome">Nome completo</label>
-          <input id="regNome" required>
-        </div>
-        <div class="field">
-          <label for="regNascimento">Data de nascimento</label>
-          <input id="regNascimento" type="date">
-        </div>
-        <div class="field">
-          <label for="regEmail">E-mail</label>
-          <input id="regEmail" type="email" required>
-        </div>
-        <div class="field">
-          <label for="regTelefone">Telefone</label>
-          <input id="regTelefone">
-        </div>
-        <div class="field">
-          <label for="regUsuario">Usuário</label>
-          <input id="regUsuario" required>
-        </div>
-        <div class="field">
-          <label for="regSenha">Senha</label>
-          <input id="regSenha" type="password" required>
-        </div>
-        <button class="btn full" type="submit">Cadastrar</button>
-      </form>
-    </div>
-
-    <div id="authMsg" class="msg"></div>
-  </div>
-
-  <div id="privateArea" class="hidden center private">
-    <p id="welcomeUser"></p>
-    <button id="logoutBtn" class="btn">Sair</button>
-  </div>
-
-  <footer>
-    <p>© 2025 - A importância do TCC em Desenvolvimento de Sistemas | Profº Antonio Carlos</p>
-  </footer>
-
-
- <script type="module" src="login.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-
-
+    <script src="script.js"></script>
 </body>
 </html>
