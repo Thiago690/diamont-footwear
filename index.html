@@ -3,113 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho de Compras Simples</title>
-    <style>
-        /* CSS BÁSICO PARA VISUALIZAÇÃO */
-        body { font-family: Arial, sans-serif; padding: 20px; }
-        .product-section, #cart-items { border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; }
-        .product-section h3 { margin-top: 0; }
-        .product-section button { background-color: green; color: white; border: none; padding: 8px 12px; cursor: pointer; }
-        #cart-items li { list-style: none; margin-bottom: 5px; }
-        #cart-total { font-weight: bold; margin-top: 10px; }
-    </style>
+    <title>Unik Stil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="top-bar">
+        <div class="top-item">
+            <span class="icon">🔒</span>
+            <span class="top-text">COMPRA SEGURA</span>
+        </div>
+        <div class="top-item">
+            <span class="icon">🛻</span>
+            <span class="top-text">FRETE GRÁTIS</span>
+        </div>
+        <div class="top-item">
+            <span class="icon">💳</span>
+            <span class="top-text">PARCELE EM ATÉ 12X</span>
+        </div>
+    </header>
 
-    <h1>Loja de Produtos</h1>
+    <nav class="main-menu">
+        <div class="logo">UNIK <span>STIL</span></div>
+        <ul>
+            <li><a href="index.html">INÍCIO</a></li>
+            <li><a href="qsomos.html">PERGUNTAS FREQUENTES</a></li>
+            <li><a href="minhaconta.html">MINHA CONTA</a></li>
+            <li><a href="dicas.html">DICAS DE CUIDADO</a></li>
+            <li><a href="rastreamento.html">RASTREAMENTO</a></li>
+        </ul>
+        <div class="cart-icon">🛒</div>
+    </nav>
+    <main>
+        <div class="carousel-container">
+            <div class="carousel-slide fade">
+                <img src="capa pdrt1.png" alt="Slide 1">
+            </div>
+            <div class="carousel-slide fade">
+                <img src="bermuda.jpeg" alt="Slide 2">
+            </div>
+            <div class="carousel-slide fade">
+                <img src="camisa cinza.jpeg" alt="Slide 3">
+            </div>
+            <div class="carousel-slide fade">
+                <img src="https://via.placeholder.com/1500x500/FFFF00/000000?text=Slide+4" alt="Slide 4">
+            </div>
+            <div class="carousel-slide fade">
+                <img src="https://via.placeholder.com/1500x500/800080/FFFFFF?text=Slide+5" alt="Slide 5">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
 
-    <div class="product-section">
-        <h3>Camiseta Básica</h3>
-        <p>Preço: R$ 50,00</p>
-        <button onclick="addToCart('Camiseta Básica', 50.00)">Adicionar ao Carrinho</button>
-    </div>
+        <section class="product-section">
+            <h2 class="section-title">DESTAQUES</h2>
+            <div class="product-grid">
+                <a href="pdt1.html" class="product-card">
+                    <img src="capa pdrt1.png" alt="camiseta branca boxy">
+                    <div class="product-info">
+                        <h3>Camiseta Boxy</h3>
+                        <p class="product-price">R$ 99,90</p>
+                        <p class="product-sizes">Tamanhos: P, M, G</p>
+                        <p class="product-description">.</p>
+                    </div>
+                </a>
+                <a href="prdt2.html" class="product-section">
+                    <img src="" alt="Jorts Cinza">
+                    <div class="product-info">
+                        <h3>Jorts Cinza</h3>
+                        <p class="product-price">R$ 120,00</p>
+                        <p class="product-sizes">Tamanhos: P, M, G</p>
+                        <p class="product-description"></p>
+                    </div>
+                </a>
+                <a href="pdrt3.html" class="product-card">
+                    <img src="cc.png" alt="Calça Baggy">
+                    <div class="product-info">
+                        <h3>Nome do Produto 3</h3>
+                        <p class="product-price">R$ 85,50</p>
+                        <p class="product-sizes">Tamanhos: P, M, G</p>
+                        <p class="product-description"></p>
+                    </div>
+                </a>
+                <a href="pdr4.html" class="product-card">
+                    <img src="Copilot_20251027_231455.png" alt="Regata Canelada">
+                    <div class="product-info">
+                        <h3>Regata Canelada</h3>
+                        <p class="product-price">R$ 150,00</p>
+                        <p class="product-sizes">Tamanhos: P, M, G</p>
+                        <p class="product-description"></p>
+                    </div>
+                </a>
+                <a href="pdrt5.html" class="product-card">
+                    <img src="camisa.png" alt="Camisa de Botão Azul"
+                        <h3>Camisa de Botão Azul</h3>
+                        <p class="product-price">R$ 90,00</p>
+                        <p class="product-sizes">Tamanhos: P, M, G</p>
+                        <p class="product-description">.</p>
+                    </div>
+                </a>
+                <a href="#" class="product-card">
+                    <img src="https://via.placeholder.com/300x400/CCCCCC/000000?text=Produto+6" alt="Produto 6">
+                    <div class="product-info">
+                        <h3>Nome do Produto 6</h3>
+                        <p class="product-price">R$ 110,00</p>
+                        <p class="product-sizes">Tamanhos: P, M, G</p>
+                        <p class="product-description">Breve descrição do produto.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
 
-    <div class="product-section">
-        <h3>Jorts Cinza</h3>
-        <p>Preço: R$ 120,00</p>
-        <button onclick="addToCart('Jorts Cinza', 120.00)">Adicionar ao Carrinho</button>
-    </div>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>UNIK STILL</p>
+            <p>Feito pelos alunos Fabiano, Thiago e Matheus - Todos os direitos reservados - 2025</p>
+        </div>
+    </footer>
 
-    <hr>
-
-    <h2>Seu Carrinho de Compras</h2>
-    <ul id="cart-items">
-        <li>Nenhum item no carrinho.</li>
-    </ul>
-
-    <p id="cart-total">Total: R$ 0,00</p>
-
-    <script>
-        // 1. Array para armazenar os itens do carrinho
-        let cart = [];
-
-        // 2. Função para adicionar um item ao carrinho
-        function addToCart(name, price) {
-            // Cria o objeto do item
-            const item = {
-                name: name,
-                price: price
-            };
-            
-            // Adiciona o item ao array do carrinho
-            cart.push(item);
-            
-            // Atualiza a interface do usuário
-            renderCart();
-        }
-
-        // 3. Função para renderizar (mostrar) o carrinho na tela
-        function renderCart() {
-            const cartList = document.getElementById('cart-items');
-            const cartTotalElement = document.getElementById('cart-total');
-            let total = 0;
-
-            // Limpa a lista atual de itens
-            cartList.innerHTML = '';
-
-            // Se o carrinho estiver vazio
-            if (cart.length === 0) {
-                cartList.innerHTML = '<li>Nenhum item no carrinho.</li>';
-                cartTotalElement.textContent = 'Total: R$ 0,00';
-                return;
-            }
-
-            // Itera sobre cada item no array 'cart'
-            cart.forEach((item, index) => {
-                // Cria um novo <li>
-                const listItem = document.createElement('li');
-                
-                // Define o texto: Nome (Preço) [Remover]
-                listItem.textContent = `${item.name} (R$ ${item.price.toFixed(2).replace('.', ',')})`;
-                
-                // Cria um botão de remover
-                const removeButton = document.createElement('button');
-                removeButton.textContent = 'Remover';
-                removeButton.style.marginLeft = '10px';
-                removeButton.onclick = () => removeFromCart(index);
-                
-                listItem.appendChild(removeButton);
-                cartList.appendChild(listItem);
-                
-                // Soma o preço ao total
-                total += item.price;
-            });
-
-            // Atualiza o total
-            cartTotalElement.textContent = `Total: R$ ${total.toFixed(2).replace('.', ',')}`;
-        }
-
-        // 4. Função para remover um item pelo seu índice
-        function removeFromCart(index) {
-            // Remove 1 item a partir do índice (index)
-            cart.splice(index, 1);
-            
-            // Re-renderiza o carrinho
-            renderCart();
-        }
-
-        // Inicializa o carrinho ao carregar a página
-        document.addEventListener('DOMContentLoaded', renderCart);
-    </script>
+    <script src="script.js"></script>
+    
 </body>
 </html>

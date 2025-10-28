@@ -1,0 +1,134 @@
+/* ---------------------------------- */
+/* Estilos do Carrinho (Modal/Overlay) */
+/* ---------------------------------- */
+
+.cart-overlay {
+    /* Faz com que o carrinho cubra toda a tela */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Esconde o carrinho por padrão */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000; /* Garante que fique acima de todo o conteúdo */
+}
+
+.cart-overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.cart-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    max-width: 400px; /* Largura ideal para um carrinho lateral */
+    height: 100%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    /* Desliza para fora da tela */
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-overlay.active .cart-modal {
+    transform: translateX(0); /* Desliza para dentro da tela */
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.cart-header h2 {
+    margin: 0;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.cart-items-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1; /* Permite que a lista cresça e o rodapé fique embaixo */
+    overflow-y: auto; /* Adiciona barra de rolagem se houver muitos itens */
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.item-details {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.remove-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.8em;
+}
+
+.cart-footer {
+    border-top: 2px solid #333;
+    padding-top: 15px;
+    text-align: right;
+}
+
+.cart-footer p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Estilo para o botão no card do produto */
+.product-actions {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.product-actions button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    width: 90%;
+}
